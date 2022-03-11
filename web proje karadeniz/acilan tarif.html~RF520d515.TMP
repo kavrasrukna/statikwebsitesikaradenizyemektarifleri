@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<style>
+#mesaj
+{
+    font-family: Calibri, Arial, sans-serif;
+    font-size: 20px;
+    width: 500px;
+}
+
+#mesaj a
+{
+   text-decoration: none;
+   color: #000;
+}
+.aciklama
+{
+    position: relative;
+    display: inline-block;
+}
+
+.aciklama::after
+{
+    content: attr(data-title);
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    padding: 15px;
+    background: #eee;
+    color: #333;
+    opacity: 0;
+    word-wrap: break-word;
+    height: auto;
+    width: 750px;
+    -moz-box-shadow: 0 0 4px #222;
+    -webkit-box-shadow: 0 0 4px #222;
+    box-shadow: 0 0 4px #222;
+    pointer-events: none;
+}
+
+.aciklama:hover::after
+{
+    opacity: 1;
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    pointer-events: auto;
+}
+</style>
+</head>
+
+<body>
+<div id="mesaj">
+    <p>
+        Felsefe, sözcük köken olarak Yunanca <a class="aciklama" href="#" data-title="Lemiz tarifi için malzemeler</br>
+4 su bardağı un1.5 su bardağı ılık suTuzİç malzemesi: 200 gr tereyağı1 kg pazı3 çorba kaşığı sıvıyağ1 iri soğan3 yumurtaTuz
+karabiber
+pulbiber Lemiz Nasıl Yapılır
+Unu hamur yoğurma kabına alıp ortasını havuz gibi açın. Bir tutam tuz ekleyin. Ilık suyu azar azar ilave ederek yoğurun. Kulak memesi kıvamında bir hamur yapın. Hamurdan küçük bezeler yapıp üzerini nemli bezle örtün.
+
+Pazıyı temizleyip yıkayın kaynar suda haşlayıp süzün. Suyunu sıkıp iri iri doğrayın. Soğanı temizleyip kıyın ve sıvıyağda kavurun. Pazıyı ilave edip tuz, karabiber, pulbiber serpin ve kavurmaya devam edin. Üzerine yumurtaları kırıp karıştırarak pişirin. Soğumaya bırakın.
+ Hamur bezelerini, unlanmış zeminde oklava ile tabak büyüklüğünde açın. İçlerine hazırladığınız malzemeden 2 kaşık kadar ilave edip ikiye kapatın. Kenarlarını parmak uçlarınızla hafifçe bastırıp kapatın. Sac üzerinde veya teflon tavada yağsız olarak iki taraflı pişirin. Tavadan alıp her iki tarafına da tereyağı sürün ve sıcak olarak muhafaza edin.
+
+Afiyet olsun."phileo"</a> 
+        ve <a class="aciklama" href="#" data-title="bilgi, bilgelik anlamına gelir">"sophia"</a>
+        sözcüklerinden türeyen entelektüel faaliyet ve disiplindir.
+    </p>
+</div>
+</body>
+</html>

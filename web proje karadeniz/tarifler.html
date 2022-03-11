@@ -1,0 +1,1552 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kuymak</title>
+<meta name="author" content="Buse Sönmez, bilgi@kuymak.com" />
+<meta name="abstract" 
+	content="Kuymak Dergisi olarak  21 yıldır Karadeniz yöresine özgü yemekleri ve tariflerini sunmaktayız." />
+    <meta name="content-language" content="tr-TR" />
+    <meta name="content-type" content="text/html charset=utf-8" />
+    <meta name="copyright" content="(c) 2018 Buse Sönmez (bilgi@kuymak.com) Tüm Hakları Saklıdır." />
+    <meta name="description" 
+	content="Karadeniz üzerine her şey bu dergide.." />
+    <meta name="designer" content="Buse Sönmez -  Kuymak Dergisi" />
+    <meta name="distribution" content="local" />
+    <meta name="keywords" content=": karadeniz, karadeniz yemek, karadeniz yemekleri, karadenizin yemekleri,kuymak,dergi" />
+    <meta name="language" content="Turkish" />
+<link href="hakkimizda.css" rel="stylesheet" type="text/css" />
+
+<link href="tarifler.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+body{font-size:14px; font-family:Verdana, Geneva, sans-serif;}
+.kutu {
+    position: fixed;
+    display: none;
+    width: auto; 
+	margin: 20px; 
+	padding: 20px;
+    height:auto;
+    top: 20px;
+    left: 0;
+    background-color:#999;
+	box-shadow: -10px -10px 25px #CCC;
+}
+
+.icKutu {
+    overflow:scroll;
+    width: auto;
+    height:auto; 
+    background-color: #FFFFFF;
+    border: 0px;
+	margin: 20px; 
+	padding: 20px;
+
+    box-shadow: -10px -10px 25px #CCC;
+}
+
+h1{width:70%; float:left;}
+.kapatButonuCerceve{width:20%; float:right; cursor:pointer;}
+.kapatButonu{text-align:right; font-size:20px; font-weight:bold;}
+.clear{clear:both;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+$(document).ready(function () {
+ 
+    $(".gosterButonu, .gosterButonu img").click(function (event) {
+        var butonAdi = $(this).closest('div').attr('id'); // tıklanan linkin idsini aldık
+        var butonNo = butonAdi.slice(4); // idnin içinden 5. karakterden sonrasını aldık
+        var kutuAdi = "#kutu" + butonNo; // kutu adını elde ettik
+ 
+        $(kutuAdi).fadeIn(300);
+    });
+ 
+ 
+    $(".kapatButonu").click(function () {
+ 
+        $(".kutu").fadeOut(200); // kapatButonuna tıklanınca açılmış durumdaki kutu kapansın.
+ 
+    });
+ 
+    $(".kutu").click(function () {
+ 
+        $(".kutu").fadeOut(200); // kutuya tıklanırsa da açılan kutu kapansın.
+ 
+    });
+ 
+    $(".icKutu").click(function () {
+        event.preventDefault();
+        event.stopPropagation();
+ 
+    });
+ 
+});
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<script src="SpryAssets/SpryAccordion.js" type="text/javascript"></script>
+ <script type='text/javascript' src='//code.jquery.com/jquery-2.1.0.js'></script>
+ <script type='text/javascript' src="jquery.hovercard.min.js"></script>
+<link href="SpryAssets/SpryAccordion.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="MM_preloadImages('görseller/beyazlogo.png')">
+<div id="container">
+
+  <div id="abonedivi">
+	<div id="sol">
+        <h5 id="aboneolyazisi" style="text-decoration:none;color:#000000;"><a href="abone.html">Kuymak dergimize abone olmayı unutmayın!</a></h5>
+    </div>
+	<div id="sag">
+        	<div id="sosyalmedya"> <a href="www.facebook.com"><img src="görseller/facebook-3383596_960_720.png" width="20" height="20" style="float:right;"/></a>
+   			<a href="www.twitter.com"><img src="görseller/fft16_mf2332299.Jpeg" width="20" height="20"style="float:right;"/></a>
+    		<a href="www.instagram.com"><img src="görseller/instagram-1581266_960_720.jpg" width="20" height="20" style="float:right;"/></a>
+    		<a href="www.youtube.com"><img src="görseller/indir.png" width="20" height="20" style="float:right;"/></a>
+            </div>
+             <div id="aramadivi">
+  	 			 <form >
+       			 <input id="aranacakmetin" type="text" placeholder="Aranacak Metin..." required>
+      			 <button id="buton" type="submit">ARA</button>
+      			</form>
+  			</div>
+	</div>
+</div>
+  <div id="menu">
+<ul>
+<li><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image41','','görseller/beyazlogo.png',1)"><img src="görseller/yesillogo.png" name="Image41" width="150" height="50" border="0" id="Image41" /></a></li>
+<li><a href="tarifler.html" style="color:#FFFFFF;background-color:#006600;">Tarifler</a></li>
+<li><a href="saglik.html">Sağlık</a></li>
+<li><a href="haberler.html">Haberler</a></li>
+<li><a href="hakkimizda.html">Hakkımızda</a></li>
+<li><a href="iletisim.html">İletişim</a></li>
+</ul>
+  </div>
+
+
+  <div id="clear-header"></div>
+<div id="Accordion1" class="Accordion" tabindex="0">
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab">Kahvaltılıklar</div>
+    <div class="AccordionPanelContent">
+    	<div id="kahvalti" >
+            	<div class="ressol">
+                <img src="görseller/engzlkymk.jpg" width="300" height="200" /><div class="gosterButonu" id="link1">Kuymak tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/yumurtalı fasülye.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link2">Yumurtalı fasülye tarifi için tıklayın ...</div>
+                </div>
+                <div class="ressag">
+                <img src="görseller/lemiz.jpg" width="300" height="200" /><br />
+                <div class="gosterButonu" id="link3">Lemiz tarifi için tıklayın... </div>
+              	</div>
+                
+          </div>
+          <div id="kahvalti2" >
+            	<div class="ressol">
+                <img src="görseller/alt üst böreği.jpg" width="300" height="200" /><div class="gosterButonu" id="link4">Alt üst böreği tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/kaygana.jpg" width="300" height="200" /><br />
+                <div class="gosterButonu" id="link5">Kaygana tarifi için tıklayın</div>
+                </div>
+                <div class="ressag">
+                <img src="görseller/misir-ekmegi-hangi-yoreye-aittir.jpg" width="300" height="200" /><br />
+               <div class="gosterButonu" id="link6"> Mısır ekmeği tarifi için tıklayın ...</div>
+              	</div>
+                
+          </div>
+    </div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab">Çorbalar</div>
+    <div class="AccordionPanelContent"><div id="corba" >
+            	<div class="ressol">
+                	<img src="görseller/ısırgan.jpg" width="300" height="200" /> <div class="gosterButonu" id="link7">Isırgan otu çorbası tarifi için tıklayın...</div></div>
+                	<div class="resorta">
+                	<img src="görseller/karalahana çorbası.jpg" width="300" height="200" /><br />
+                	 <div class="gosterButonu" id="link8">Karalahana çorbası tarifi için tıklayın</div>
+                	</div></center>
+                	<div class="ressag">
+                	<img src="görseller/Sebzeli-levrek-çorbası.jpg" width="300" height="200" /><br />
+                	 <div class="gosterButonu" id="link9">Sebzeli levrek çorbası tarifi için tıklayın ...</div>
+              		</div>                
+         		</div>
+                <div id="kahvalti" >
+            	<div class="ressol">
+                <img src="görseller/pampum çorbası.jpg" width="300" height="200" /> <div class="gosterButonu" id="link10">Pampu çorbası tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/misir.jpg" width="300" height="200" /><br />
+                <div class="gosterButonu" id="link11"> Mısır çorbası tarifi için tıklayın</div>div<
+                </div>
+                <div class="ressag">
+                <img src="görseller/hamsi çorbası.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link12">Hamsi çorbası tarifi için tıklayın ...</div>
+              	</div>
+                
+          </div>
+     </div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab">Sebze Yemekleri</div>
+    <div class="AccordionPanelContent"><div id="sebze" >
+            	<div class="ressol">
+                <img src="görseller/karalahana diblesi.jpg" width="300" height="200" /> <div class="gosterButonu" id="link13">Karahalana diblesi tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/fastur.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link14">Fasülye Turşusu tarifi için tıklayın</div>
+                </div></center>
+                <div class="ressag">
+                <img src="görseller/pancarsarması.jpg" width="300" height="200" /><br />
+                <div class="gosterButonu" id="link15">Pancar sarması tarifi için tıklayın ...</div>
+              </div>
+                
+          </div>
+          <div id="sebze" >
+            	<div class="ressol">
+                <img src="görseller/pazılıkaygana.jpg" width="300" height="200" /> <div class="gosterButonu" id="link16">Pazılı kaygana tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/tomara.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link17">Tomara kızartması tarifi için tıklayın</div>
+                </div>
+                <div class="ressag">
+                <img src="görseller/pezik.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link18">Pezik mücver tarifi için tıklayın ...</div>
+              	</div>
+                
+          </div>
+          </div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab">Et Yemekleri</div>
+    <div class="AccordionPanelContent"><div id="et" >
+            	<div class="ressol">
+                <img src="görseller/akcaabat_koftesi-b28eba95-563a-422c-ae0a-225ea68bd32a.jpg" width="300" height="200" /> <div class="gosterButonu" id="link19">Akçaabat köftesi tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/etlilahana.jpg" width="300" height="200" /><br />
+                <div class="gosterButonu" id="link20"> Etli karalahana dolması tarifi için tıklayın</div>
+                </div></center>
+                <div class="ressag">
+                <img src="görseller/trabzon kıymalısı.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link21">Trabzon kıymalısı tarifi için tıklayın ...</div>
+              </div>
+                
+          </div><div id="kahvalti" >
+            	<div class="ressol">
+                <img src="görseller/kavurma.png" width="300" height="200" /> <div class="gosterButonu" id="link22">Karadeniz usulü kavurma tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/hinkal.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link23">Hinkal tarifi için tıklayın...</div>
+                </div>
+                <div class="ressag">
+                <img src="görseller/kıymalısiron.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link24">Kıymalı siron tarifi için tıklayın ...</div>
+              	</div>
+                
+          </div></div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab">Balık Yemekleri</div>
+    <div class="AccordionPanelContent"><div id="balik" >
+            	<div class="ressol">
+                <img src="görseller/hamsilipilav.jpg" width="300" height="200" /> <div class="gosterButonu" id="link25">Hamsi pilavı tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/hamsibuğulama.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link26">Hamsi buğulaması tarifi için tıklayın</div>
+                </div></center>
+                <div class="ressag">
+                <img src="görseller/hamsiköftesi.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link27">Hamsi köftesi tarifi için tıklayın ...</div>
+              </div>
+                
+          </div><div id="balik" >
+            	<div class="ressol">
+                <img src="görseller/palamuttava.jpg" width="300" height="200" /> <div class="gosterButonu" id="link28">Palamut tava tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/hamsidiblesi.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link29">Hamsi diblesi tarifi için tıklayın...</div>
+                </div>
+                <div class="ressag">
+                <img src="görseller/hamsi kuşu.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link30">Hamsi Kuşu tarifi için tıklayın ...</div>
+              	</div>
+                
+          </div></div>
+  </div>
+  <div class="AccordionPanel">
+    <div class="AccordionPanelTab">Tatlılar</div>
+    <div class="AccordionPanelContent"><div id="tatli" >
+            	<div class="ressol">
+                <img src="görseller/findikli_yufka_tatlisi-31237d72-cdb5-4cc8-87a5-452f3a50fa34.jpg" width="300" height="200" />
+                 <div class="gosterButonu" id="link31">Fındıklı yufka tatlısı tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/laz-helvasi-tarifi.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link32">Laz Helvası tarifi için tıklayın...</div>
+                </div></center>
+                <div class="ressag">
+                <img src="görseller/kukuca.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link33">Kukuca tarifi için tıklayın ...</div>
+              </div>
+                
+          </div><div id="tatli2" >
+            	<div class="ressol">
+                <img src="görseller/Sütlü-Kabak-Yapılışı.jpg" width="300" height="200" />
+                 <div class="gosterButonu" id="link34">Kabak sütlacı tarifi için tıklayın...</div></div>
+                <div class="resorta">
+                <img src="görseller/laz-boregi-.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link35">Laz böreği tarifi için tıklayın...</div>
+                </div>
+                <div class="ressag">
+                <img src="görseller/pepeçura.jpg" width="300" height="200" /><br />
+                 <div class="gosterButonu" id="link36">Peperuça tarifi için tıklayın ...</div>
+              	</div>
+                
+          </div></div>
+  </div>
+ 
+   
+   
+  <div id="clear-content"></div>
+  <div id="footer">Copyright 2018 Tüm hakları sakldır. Design &amp; Development:Buse Sönmez</div>
+<script type="text/javascript">
+var Accordion1 = new Spry.Widget.Accordion("Accordion1");
+  </script>
+  <!-- Tıklayınca açılacak ve ekranı kaplayacak olan kutular  -->
+
+   <div id="kutu1" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KUYMAK</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+Trabzon Usulü Kuymak Tarifi İçin Malzemeler<br>
+4 yemek kaşığı mısır unu<br>
+2 su bardağı su<br>
+2 yemek kaşığı tereyağı<br>
+1 kase kadar telli peynir, imansız peynir ve kaşar peyniri karışımı<br>
+Tuz (peynirlerin tuz oranına göre istediğiniz ölçüde)<br>
+<strong>Kuymak nasıl yapılır?</strong><br>
+
+<strong>Trabzon Usulü Kuymak Tarifi Yapılışı</strong><br>
+Bakır yada teflon tavamıza 2 yemek kaşığı tereyağını koyup eritelim.
+4 yemek kaşığı mısır ununu ve tuzu ekleyip unumuzu kavuralım.
+Hafif rengi dönüp kokusunu verince 2 su bardağı soğuk suyumuzu da yavaş yavaş ekleyelim.
+Topaklanma olmaması için karıştıralım.
+Altı kısık bir şekilde suyunu çekip yağını üzerine verinceye kadar yaklaşık 5 dakika pişirelim.
+Bu aşamada peynirli karışımımızı ekleyip fazla karıştırmadan peynirimiz eriyip tekrar yağı yüzüne çıkınca altını kapatalım ve sıcak sıcak servis edelim. Afiyet olsun…<br>
+<strong>Kuymak püf noktaları</strong><br>
+Kuymağınızı bakır tava le yapacaksanız öncesinden tavanızı ısıtmalısınız.
+Tadının yumuşaması için su yerine süt koymayı da tercih edebilirsiniz.
+Kuymağın orijinal peyniri yoksa eriyebilen diğer peynirleri de kullanabilirsiniz.
+Tuz miktarını kullandığınız peynirlerin tuzluluk oranına göre ayarlamalısınız.
+Mısır ununuzu rengi hafif dönene kadar kavurmalısınız.<br>
+<strong>Kuymak peyniri</strong></br>
+Kuymağın orijinal peyniri kolot peyniridir. Tam yağlı inek sütünden yapılmaktadır. Günümüzde mıhlama için kolot peyniri bulunmadığı zaman diğer eriyen peynirlerden de kullanılmaktadır.</br>
+<strong>Kuymak mıhlama farkı</strong><br>
+Kuymakla mıhlama arasındaki fark yok denecek kadar azdır. Kuymakta mısır ununa, mıhlama da ise peynire önem verilmektedir. Adı ne olursa olsun tadı her şekilde çok güzel. O zaman ayrıntılara takılmadan yemeye devam :)
+Kuymak hangi bölgeye aittir?
+Kuymak Samsun, Artvin, Trabzon, Rize, Ordu, Giresun gibi illerde yani Karadeniz bölgesinde yapılan ve şuan lezzeti ile ülkemizin her yerine nam salmış bir yiyecektir.<br>
+<strong>Kuymak kalori</strong><br>
+Orta büyüklükteki 1 porsiyon kuymak yaklaşık olarak 489 kaloriye denk gelmektedir.</p>
+      </div>
+  </div>
+
+  </div>
+
+
+
+
+<div id="kutu2" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>YUMURTALI FASÜLYE</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+<strong>Yumurtalı Fasulye Kavurması Tarifi İçin Malzemeler</strong><br>
+Yarım kilo taze fasulye<br>
+1 adet soğan<br>
+4 adet yumurta<br>
+2 çorba kaşığı tereyağı veya sıvı yağ<br>
+Karabiber<br>
+Pulbiber<br>
+Tuz<br>
+Sarımsak<br>
+<strong>Yumurtalı Fasulye Kavurması Tarifi Yapılışı</strong></br>
+Fasulyeleri temizledikten sonra küçük parçalara ayırıp kaynamış suda 10 dakika haşlıyoruz.
+Süzgeçten geçiriyoruz.
+Doğranmış soğan ve sıvı yağı kavurduktan sonra fasulyeleri ekliyoruz.
+Kavrulan fasulyelere karabiber sarımsak ve tuz ekleyip yumurtaları kırıp üzerine pulbiber ekleyip servis ediyoruz.</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+  <div id="kutu3" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>LEMİZ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            <strong>Malzemeler</strong><br>
+4 su bardağı un<br>
+2 su bardağı ılık su<br>
+1 çay kaşığı tuz<br>
+<strong>İç malzeme</strong><br>
+30 gr tereyağı<br>
+1 kg ıspanak (veya pazı)<br>
+3 çorba kaşığı sıvıyağ<br>
+1 soğan<br>
+3 yumurta<br>
+Tuz<br>
+Karabiber<br>
+Pul biber<br>
+<strong>Lemiz Nasıl Yapılır</strong><br>
+Denenmiş yemek tarifleri sunan Lezzet'tin börek tarifleri listesinden iyi bir seçim.
+
+Unu hamur yoğurma kabına eleyip ortasını havuz gibi açın. Bir tutam tuz  ve ılık suyu ilave edip yoğurun. Hamurdan küçük bezeler koparıp üzerini bir bezle örtün ve 30 dakika bekletin.
+
+Ispanağı temizleyip bol suyla yıkayın. Kaynar suda hafifçe haşlayıp süzün. Suyunu elinizle iyice sıkıp iri parçalar şeklinde doğrayın. Soğanı soyup kıyın ve sıvıyağda kavurun. Ispanağı ilave edin. Tuz, karabiber ve pul biberle tatlandırıp kavurmaya devam edin. Üzerine yumurtaları kırıp karıştırarak pişirin. Soğumaya bırakın.
+
+Hamur bezelerini unlanmış zeminde oklava ile pasta tabağı büyüklüğünde ince açın. İçlerine hazırladığınız malzemeden 2 kaşık kadar ilave edip ortadan ikiye kapatın. Kenarlarını parmak uçlarınızla bastırıp yapıştırın. Sac üzerinde veya yağlanmış teflon tavada iki taraflı pişirin. Tavadan alıp her iki tarafına da tereyağı sürün. Sıcak servis yapın.</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+    
+  <div id="kutu4" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>ALT ÜST BÖREĞİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+<strong>Alt Üst Böreği Tarifi İçin Malzemeler<strong><br>
+<strong>HAMURU İÇİN</strong><br>
+
+2 su bardağı ılık su<br>
+Yarım paket yaş maya<br>
+1 tatlı kaşığı toz şeker<br>
+1 tatlı kaşığı tuz<br>
+1. 5 bardak un<br>
+2 bardak kepekli un ( hamur yumuşak bir hamur olacak un kıvamını ona göre ayarlarsınız)<br>
+<strong>İÇ HARCI;</strong><br>
+
+5-6 tane orta boy haşlanmış patates<br>
+1 orta boy soğan<br>
+1 tatlı kaşığı domates salçası<br>
+1 tatlı kaşığı biber salçası<br>
+Zeytin yağı<br>
+Tuz<br>
+Karabiber<br>
+Kırmızı biber<br>
+Maydanoz<br>
+Reyhan<br>
+<strong>Alt Üst Böreği Tarifi Yapılışı</strong><br>
+Hamur malzemeleri kaba alınır yumuşak bir hamur elde edilir. Mayalanmaya bırakılır.Haşlanmış patatesleri küçük küçük doğranır.Zeytin yağda soğanlar pişirilir içine domates biber salçası eklenir. Sonra doğradığınız patateslerde eklenir. Tuz biber maydanoz reyhan konulup bir kaç kez karıştırdıktan sonra ocaktan alınır.Mayalanan hamur iki parçaya bölünür hamurun bir parçasını 35 40 santim çapındaki yuvarlak fırın tepsisi boyutunda açılır tepsiye koyulur içine hazırladığınız harç koyulur üstüne de aynı şekilde ikinci hamur konulur üzerine sıvı yağ sürüp 200 derecelik fırında 20 25 dk üstü kızarıncaya kadar pişirilir.</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+  <div id="kutu5" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KAYGANA</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+<strong>Malzemeler</strong><br>
+4 adet yumurta<br>
+1 su bardağı un<br>
+1 su bardağı<br>
+Süt<br>
+1/3 demet maydanoz<br>
+1/3 demet dereotu<br>
+3 dal taze soğan<br>
+1 tatlı kaşığı tuz<br>
+Pişirmek için:1 çay bardağı ayçiçek yağı<br>
+<strong>Püf Noktası</strong><br>
+Kayganın içerisine damak zevkinize göre kılçıkları ayıklanıp, ince ince doğranmış hamsi de ekleyebilirsiniz. Mevsimine göre yeşilliklerden, karalahana ya da pazı da ekleyebilirsiniz.
+
+<strong>Nasıl Yapılır?</strong><br>
+Unu, sütü ve tuzu derin bir kabın içerisinde güzelce çırpın. Yumurtaları ayrı bir kasede çırpın ve bu karışıma ilave ederek güzelce karıştırın.
+
+İçerisine ince ince doğranmış; maydanoz, taze soğan ve dereotunu da ekleyip iyice karıştırın. Yapışmaz tabanlı bir krep tavasını ocakta ısıtın.
+
+Harca 1 yemek kaşığı kadar sıvı yağ koyun, yağ kızınca hazırladığınız kaygana hamurundan bir kepçe alın ve tavaya yayın.
+
+Altlı üstlü çevirerek güzelce pişirin. Tüm karışımı tavaya her seferinde bir miktar yağ ilave ederek bu şekilde pişirin. Sıcak sıcak servis edin.</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+    <div id="kutu6" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>MISIR EKMEĞİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+<strong>Mısır Ekmeği Tarifi İçin Malzemeler</strong><br>
+1 kg mısır unu<br>
+1 paket kabartma tozu<br>
+3 yemek kaşığı yoğurt<br>
+yarım su bardağı sıvı yağ<br>
+tuz<br>
+1 tatlı kaşığı şeker<br>
+yarım su bardağı un<br>
+su (kaynar olacak)<br>
+<strong>Mısır Ekmeği Tarifi Yapılışı:</strong><br>
+Tüm malzemeler yoğurma kabına alınır, üzerine kaynar sudan 1 su bardağı kadar dökülerek kaşıkla karıştırılır.
+Yavaş yavaş az miktarda kaynar su ilave edilip elle yoğurulmaya başlanır.
+Suyu az az ekleyerek kıvam alana kadar yoğrulur. Fırın tepsisi güzelce yağlanır.
+Üzerine un serpilir ve hamur tepsiye alınır. Elle ekmek şeklinde şekillendirilir.
+Üzerine hafif un serpilerek 190 derecede kızarıncaya kadar pişirilir.
+Kızarınca fırının derecesini düşürüp 5 dakika daha pişirip fırından alabilirsiniz. Afiyet olsun.<br>
+Karedeniz bölgesinde ekmek fırınlarında ve evlerde hazırlanan mısır ekmeği özellikle Rize de çoğunlukla hazırlanıyor.
+Miss gibi kokan ve ekmeği böldüğünde arasındaki o güzel rengi ile iştah açan mısır ekmeği tarifini sizlerde çok beğeneceksiniz.
+
+Öğütülen mısır tanelerinden un haline getirildikten sonra hazırlanan, hamurun içinde yoğurulan mısır ekmeğini sizlerde yemeklerinizde veya sade bir şekilde sağlıklı bir ekmek hazırlayabilirsiniz.</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+      <div id="kutu7" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>ISIRGAN OTU ÇORBASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+<strong>Isırgan Otu Çorbası Tarifi İçin Malzemeler</strong> </br>
+Yarım kg ısırgan otu</br>
+1.5 su bardağı mısır unu</br>
+3 yemek kaşığı tereyağı</br>
+1 tatlı kaşığı nane (varsa taze yeşil nane kullanın)</br>
+4-5 diş sarımsak</br>
+Tuz</br>
+<strong>Isırgan Otu Çorbası Tarifi Yapılışı</strong></br>
+Ellerinize eldiven geçirerek ısırgan yapraklarını ayıklayın. Çok kaba olmamakla birlikte sap kısımlarını da çorbaya dahil edin. Ayıklanan ısırgan otunu yıkayıp üzerini geçecek kadar suda haşlayın.
+Isırganlar yumuşayınca (özellikle sapları) haşlama suyundan 1 bardak ayırıp suyunu süzün. Ben kendi suyunun tamamını kullanmıyorum, tadı çorbayı biraz bozabilir. Çok faydalı bir ot olduğu için haşlama suyunun yalnız bir kısmını kullanıyorum. Tercih sizin.
+Süzdüğünüz yaprakları daha sonra tencereye alın ve suyu da ekleyerek blender’dan geçirin. Dilerseniz eskilerin yaptığı gibi elinizle kevgirden de geçirebilirsiniz. Kolay ezmek için biraz su ekleyin.
+Haşlanmış otlar püre gibi iyice ezildikten sonra üzerine bir kaç bardak daha su ekleyin ve ocağa alarak yavaş yavaş mısır ununu ekleyin.
+Bir taraftan da çırpıcı telle karıştırın. Mısır unundan dolayı kaynadıkça koyulaşacaktır. Kıvamını kendiniz ayarlayacak şekilde istediğiniz gibi su ekleyebilirsiniz.
+Ocaktan almaya yakın dövülmüş sarımsak ve koku vermesi için taze veya kuru nane ilave edin.
+Tuzunu ayarlayın.
+Son olarak bir tavada erittiğiniz tereyağını da çorbaya ilave edin ve karıştırarak ocaktan alın. Fazla bekletmeden tercihen mısır ekmeği ile sıcak servis edin. Afiyet olsun…</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+        <div id="kutu8" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KARALAHANA ÇORBASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p><strong>Karalahana çorbası (Trabzon) tarifi için malzemeler</strong><br>
+1 demet karalahana<br>
+200 gr haşlanmış barbunya<br>
+2 soğan<br>
+4 su bardağı su<br>
+1 su bardağı tane mısır<br>
+1 yemek kaşığı tereyağı<br>
+1 yemek kaşığı zeytinyağı<br>
+1~2 acı kuru kırmızıbiber<br>
+Tuz<br>
+Karabiber<br>
+<strong>Karalahana çorbası (Trabzon) Nasıl Yapılır?</strong><br>
+Karalahanayı ince doğrayın. Üzerine tuz serpip biraz ovun ve acısının çıkmasını sağlayın. Tereyağı ile zeytinyağını tencerede ısıtın. Üzerine yemeklik doğradığınız soğanlar ekleyip soteleyin. Soğan yumuşayınca karalahanayı ilave edin. 4 su bardağı su ekleyip kaynamaya bırakın. Karalahana yumuşayınca kırmızıbiber, barbunya ve mısırı ekleyin. Yaklaşık 7-8 dakika kaynattıktan sonra tuz ve karabiber ile tatlandırın. Sıcak servis yapın.
+<br>
+Karadeniz’in değişik bölgelerinde farklı usullerde yapılan karalahana çorbası, Trabzon’da çok pişirilir. Kimi yörelerde “haşlama” adıyla da bilinir.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+  
+          <div id="kutu9" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>SEBZELİ LEVREK ÇORBASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p><strong>Sebzeli levrek çorbası tarifi için malzemeler</strong></br>
+500 gr levrek</br>
+2 havuç</br>
+2 kabak</br>
+100 gr kuşkonmaz</br>
+100 gr brokoli</br>
+Dereotu</br>
+Tuz</br>
+Tane karabiber</br>
+1 çay bardağı un</br>
+500 ml balık suyu</br>
+1 yemek kaşığı tereyağı</br>
+2 yemek kaşığı zeytinyağı</br>
+1 yemek kaşığı hazır sebzeli çeşni</br>
+<strong>Sebzeli levrek çorbası Nasıl Yapılır.</strong></br>
+Sebzeleri doğrayıp haşlayın. Derin bir tencerede unu tereyağı ve zeytinyağı ile kavurun. Balık suyunu ekleyip kaynamaya bırakın. Tuz, karabiber ve sebzeli çeşni ile tatlandırın. Sebzeleri kaynayan suya ilave edin. Levrekleri ayıklayıp ekleyin. Balıklar pişinceye kadar kaynatın. Servis tabağına alıp dereotu ile süsleyerek servis yapın.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  <div id="kutu10" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>PAMPU  ÇORBASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu11" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>MISIR ÇORBASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Sütlü Mısır Çorbası (Kesinlikle Deneyin) Tarifi İçin Malzemeler</br>
+1 yemek kaşığı tereyağ ya da margarin</br>
+1 yemek kaşığı sıvı yağ</br>
+2 yemek kaşığı un</br>
+2 su bardağı süt</br>
+2 su bardağı su</br>
+1 adet et bulyon</br>
+1 kutu konserve mısır</br>
+Tuz</br>
+Üzerine Sos İçin:</br>
+
+Tereyağı</br>
+Pul biber</br>
+Sütlü Mısır Çorbası (Kesinlikle Deneyin) Tarifi Yapılışı</br>
+Un, tereyağ ve sıvı yağla birlikte yaklaşık 5-6 dakika kavrulur.
+Kavrulan una süt ve su eklenir (ikisi de normal olacak ısıtmaya gerek yok) kaynayana kadar karıştırılır.
+Kaynayınca mısır da ilave edilir.
+Ardından et bulyon ve tuz da eklenerek 10 dakika kadar daha kısık ateşte kaynamaya bırakılır.
+Üzerine tereyağ eritilir ve pul biber de eklenerek sos elde edilir.
+NOT: Un miktarı kişi başı yarım yemek kaşığı olarak ayarlanır. Eğer çorba gözünüze çok kıvamlı gelirse sıcak su eklemesi yapın lütfen. Çok sulu olmayacak kıvamlı olması gerekir. 
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu12" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HAMSİ ÇORBASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Hamsi Çorbası (Çocuklar İçin Çok Faydalı Bir Tarif) Tarifi İçin Malzemeler</br>
+200 gr hamsi</br>
+1 adet havuç</br>
+1 adet patates</br>
+1 adet soğan</br>
+1 küçük dilim kereviz</br>
+2 dış sarımsak</br>
+Tuz, karabiber, pul biber (İsteğe bağlı)</br>
+1/5 limon suyu</br>
+1, 5 litre su</br>
+1 kaşık tereyağı</br>
+1 kaşık sıvı yağ</br>
+1, 5 kaşık un</br>
+Hamsi Çorbası (Çocuklar İçin Çok Faydalı Bir Tarif) Tarifi Yapılışı</br>
+Hamsileri kılçıklar dan temizliyoruz.</br>
+Sebzeleri temizleyip, büyük parça halinde doğruyoruz.</br>
+Bir tencereye suyu koyup, balıkları ve sebzeleri ekliyoruz ve haşlamaya bırakıyoruz, yaklaşık 25-30 dakika.
+Daha sonra, çorbanın suyunu süzüyoruz.
+Aynı tencerede, tereyağı, yağda eritiyoruz ve unu ekleyip, kavuruyoruz. altın rengi olana kadar.
+Daha sonra, kenarda bıraktığımız çorbanın suyu, ekleyip, tel yardımyla karıştırarak, kıvamı getirmeye çalışıyoruz ve kaynatmaya bırakıyoruz.
+Kayanatıktan sonra, kenarda bıraktığımız, balıkları, küçük doğradınız sebzeleri, baharatları ve limon suyunu ilave edip, 10 dakika daha kaynatıyoruz.
+Bu kadar. çok sağlıklı ve süper bir lezzet
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu13" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KARALAHANA DİBLESİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Bulgurlu Karalahana Diblesi Tarifi İçin Malzemeler</br>
+Yarım kilo taze karalahana</br>
+1 büyük kuru soğan</br>
+1 yemek kaşığı salça</br>
+3-4 yemek kaşığı kalın bulgur</br>
+İstenirse acı biber</br>
+2 yemek kaşığı sıvı yağ</br>
+1 yemek kaşığı tereyağ</br>
+Tuz</br>
+Bulgurlu Karalahana Diblesi Tarifi Yapılışı</br>
+Bir tencereye su ekleyip kaynamaya bırakalım.
+Karalahanayı güzelce yıkayalım ve ince ince keselim.
+Su kaynadıktan sonra karalahanayı 10 dakika haşlayalım.
+Pilavlık bulguru da ekleyip beş dakika sonra altını kapatalım, bulgurların biraz daha şişmesini bekleyelim sonra süzelim.
+Bir tavada yağda ince kıyılmış soğanı biraz kavuralım. Salçayı ve acısını ekleyip birazda daha kavurun.
+Karalahana ve bulgur karışımını ekleyelim, tuzunu ayarlayın(eğer lahanalar ve bulgur pişmemiş ise biraz su ekleyin). Tavanın kapağını kapatıp kısık ateşte pişmeye bırakın. Bazı yörelerde salça eklenir bazı yörelerde eklenmez. Afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu14" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>FASÜLYE TURUSU </h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Fasulye Turşusu Nasıl Yapılır İçin Malzemeler:</br>
+2 kg yeşil fasulye</br>
+1 su bardağı üzüm sirkesi</br>
+3 baş sarımsak</br>
+8 bardak içme suyu</br>
+2 tane cam kavanoz</br>
+3 yemek kaşığı kaya tuzu</br>
+Fasulye Turşusu Nasıl Yapılır Yapılışı</br>
+Fasulyeler yıkanır, temizlenir.
+Büyük boy tencereye yarısına yakın su doldurulur ve kaynamaya bırakılır.
+Kaynamaya başladığı zaman fasulyeler azar azar tencereye atılır.
+Fasulyeleri içine attıktan sonra, su kaynamaya başladığı zaman 3 dakika içinde tutulur.
+Benim fasulyelerim iri ve etli olduğu için bu süre iyi geldi. Siz de kendi fasulyenizin yapısına göre bu süreyi ayarlayabilirsiniz.
+Fasulye çok az haşlanmış oluyor bu sürede. Daha fazla pişerse çok çabuk olgunlaşır turşumuz ve erir.
+Ben 2 kg fasulyeyi dörde bölerek sıcak suya attım.
+Çıkarılan fasulyeler geniş bir tepsiye çıkartılır ve soğumaya bırakılır.
+Sarımsaklar temizlenir. Benim sarımsaklarım çok iriydi. O nedenle küçük parçalara böldüm.
+2 Tane kavanoz hazırladım. Siz isterseniz bir büyük kavanoza koyabilirsiniz.
+Kavanozun dibine birkaç sarımsak dizilir. Üzerine fasulye ve aralarına sarımsak koymak üzere kavanoz doldurulur ağzına kadar.
+Kavanozların içine içme suyu doldurarak ne kadar su aldığı hesaplanır.
+Tekrar bir kabın içine o su boşaltılır.
+3 Yemek kaşığı kaya tuzu, 1. 5 su bardağı sirke suyun içine karıştırılır.
+Ama tavsiyem tuzu sıcak su ile eritmeniz. Daha çabuk eriyor böylece.
+Kavanozun içine boşaltılır. Ağzı sıkıca kapatılır.
+Serin bir yere kaldırılır.</br>
+Öneriler</br>
+Arada kontrol etmeyi, tuz oranına bakmayı unutmayın derim. Turşularımızın hepsi için geçerli bu.
+Sebzeler tuzu içine çektikçe tuzu azalabilir. Tuz takviyesi gerekebilir.
+Fasulye seçerken etli fasulye olmasına dikkat edilmeli.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu15" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>PANCAR SARMMASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Pancar Sarması Tarifi İçin Malzemeler</br>
+bir bağ pancar yaprağı</br>
+1 kase ince bulgur</br>
+1 kase un</br>
+1 soğan</br>
+karabiber</br>
+kimyon</br>
+tuz</br>
+üzeri için:</br>
+
+3 yemek kasığı tereyağı ve sıvı yağ</br>
+sarımsaklı yoğurt</br>
+Pancar Sarması Tarifi Yapılışı</br>
+Öncelikle pancar yaprakları birkaç dakika haşlanır, zaten hemen kendini bırakacaktır sıcak suda.
+Harcımızı hazırlayalım, bu harç tarifini ben kendi annemden başka kimsede görmedim belirtmek istedim. Bulgur ve un karıştırılır, soğan küçük doğranır, eklenir, baharatlar ve tuzda eklendikten sonra 1 su bardağı kadar su eklenir.
+Harç karılır su az gelirse eklenebilir, yumuşak bir harç olacak.
+Yapraklar ortasındaki damarlı yerden ikiye ayrılır ve harç konularak sarılır.
+Yanlarını kıvırıp kapatmanıza gerek yok çünkü taşmayacaktır.
+Tencereye dizilen sarmaların üzerini geçecek kadar su eklenir ve üzerine porselen bir tabak konularak yarım saat kısık ateşte pişirilir, süzülür.
+Üzerine bol tereyağı gezdirilir arzuya göre de sarımsaklı yoğurt dökülür. Afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu16" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>PAZILI KAYGANA TARİFİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+Malzemeler:</br>
+2 Bağ Pazı </br>
+2 Adet Kuru Soğan </br>
+1 Su Bardağı Mısır unu </br>
+1/2 Demet Taze Nane </br>
+4 Adet Yumurta </br>
+1 Tatlı Kaşığı Tuz </br>
+1 Tatlı Kaşığı Kuru Nane </br>
+1/2 Çay Bardağı Zeytinyağı </br>
+
+Pazıları ince ince doğrayalım. Soğanları da küçük doğrayıp tuzla ovalım. Ardından süzgece koyup üzerinde su gezdirelim. Su süzüldükten sonra, pazı ve soğanları derin bir kaba alalım. Yumurtaları, ince kıyılmış taze naneyi, kuru naneyi, tuzu ve mısır ununu ilave edip karıştıralım. Tavayı yağlayalım. Karışımımızı tavaya yayalım. Piştikten sonra kapak yardımıyla çevirerek diğer tarafın da pişmesini sağlayalım. Pazılı kayganamız servise hazır.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+    <div id="kutu17" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>TOMARA KIZARTMASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>TOMARA KIZARTMASI (TRABZON) </br>
+
+2 bağ tomara </br>
+2 adet yumurta </br>
+1 kase mısır unu </br>
+2 çay kaşığı tuz </br>
+3 yemek kaşığı margarin </br>
+
+İlk öcelikle sebzemizi çiçeklerinden ayırıp kısa kısa doğruyoruz. Daha sonra yıkıyor ve haşlıyoruz. Haşlarken tuzunu atıyoruz. Haşlandıktan sonra biraz soğumasını bekleyip mısır unu ile karıştırıyoruz. Margarini tavaya koyup tomaraları ekliyoruz ve kızartıyoruz. Kızarırken üstüne az miktarda margarin koyarsanız daha lezzetli olur. Kızaran tarafı kapak yardımı ile çevirip tavayı tekrar yağlayıp diğer tarafını kızartıyoruz bu arada kızar tarafa da 2 yumurta kırıp yayıyoruz. Diğer tarafıda kızarın ca yine kapak yardımı ile yumurtalı tarafı çevirip biraz da yumurtaları çektiriyoruz. Servis tabağına alıyoruz. 
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+     <div id="kutu18" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>PEZİK MÜCVERİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Pezik Mücveri Malzemeleri</br>
+Pezik (Pazı)2 bağ</br>
+Soğan 2 adet</br>
+Pirinç 2 fincan</br>
+Yumurta 2 adet</br>
+Un 2 yemek kaşığı</br>
+Tuz-Karabiber-Nane</br>
+Sıvıyağ 1 çay bardağı</br>
+Pezik Mücveri Nasıl Yapılır?</br>
+Pezikler ayıklanıp yıkanır, ince ince doğranıp, haşlanır. (sapları yumuşayıncaya kadar.)
+Süzgece alınır. Üzerine biraz soğuk su gezdirilir.
+Pirinç üzerini örtecek kadar su ile haşlanıp suyu çektirilir. Haşlanan pezikler avuç içinde sıkılarak çukur bir kaba alınır. İçine haşlanmış pirinç, un, yumurta, tuz, karabiber, soğan ve nane ilave edilip iyice karıştırılır.
+Tavaya bir miktar sıvayağ koyulup, kızdırılır. Hazırlanan iç tavaya ince bir şekilde (1 cm.) yayılır. Kızartma işlemi yapılırken tava yavaş yavaş sallanmalı.
+Bir taraf kızarınca bir tabak yardımı ile alt üst edilerek diğer tarafta kızartılır. Ilıdığı zaman dilimlere kesilerek servis tabağına alınır. Bu ölçüdeki malzemelerle 2-3 tava hazırlanabilir.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+     <div id="kutu19" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>AKÇAABAT KÖFTESİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Akçaabat köftesi tarifi için malzemeler</br>
+1 kg döş kıyma (dana)</br>
+600 gr gerdan kıyma (dana)</br>
+400 gr bayat ekmek içi</br>
+6 iri diş sarımsak</br>
+300 gr gömlek yağı</br>
+2 yemek kaşığı tuz</br>
+Akçaabat köftesi Nasıl Yapılır.</br>
+Gerdan eti, döş eti, ekmek, gömlek yağı ve sarımsakları et kıyma makinesinden geçirin. Mümkünse mermer bir zemin üzerine alarak kıvam alana kadar yoğurun. Küçük yumurta büyüklüğünde parçalara ayırıp yassı yuvarlak şekil verin. Izgarada pişirip servis yapın.
+
+Trabzon’un Akçaaabat ilçesinin Türkiye’ye lezzetli bir armağanı olan bu köfte, iftarlarınıza farklılık katacak.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+     <div id="kutu20" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>ETLİ KARALAHANA DOLMASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Kıymalı Karalahana Sarması Tarifi İçin Malzemeler</br>
+250 gram karalahanayaprağı</br>
+250 gram kıyma</br>
+1 küçük çay bardağı pirinç</br>
+2 orta boy kuru soğan</br>
+1 diş sarımsak</br>
+Yarım demet maydanoz</br>
+3 yemek kaşığı domates rendesi</br>
+1 tatlı kaşığı biber salçası</br>
+1 tatlı kaşığı domates salçası</br>
+Tuz, karabiber, kırmızı pul biber</br>
+Pişirme suyu için malzemeler:</br>
+
+1 tatlı kaşığı domates salçası</br>
+1 tatlı kaşığı biber salçası</br>
+Yarım çay bardağı zeytinyağı</br>
+2 su bardağı kaynar su</br>
+Kıymalı Karalahana Sarması Tarifi Yapılışı</br>
+Karalahananın sert damarlı yerlerini bıçakla keserek yapraklarını kaynamış suda haşlayalım.
+Sarmadan önce her birinin saplarını kopartın.
+Dolmanın iç harcı için tüm malzemeleri karıştırın. Soğan ve sarımsağı eklerken çok ince doğrayın.
+Dolmayı sararak tencereye dizin üzerine pişirme suyu malzemelerini karıştırarak gezdirin.
+Piştikten sonra üzerine arzuya göre yoğurt ve kıvırcık salata ile servis yapalım.. 
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+     <div id="kutu21" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>TRABZON KIYMALISI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Malzemeler:</br>
+60 gram un</br>
+1/2 su bardağı
+su</br>
+(ılık)1 tatlı kaşığı
+instant maya</br>
+1 çay kaşığı
+tuz</br>
+1 tatlı kaşığı
+zeytinyağı</br>
+Üzeri İçin:</br>1 adet
+yumurta</br>
+1 yemek kaşığı
+tereyağı</br>
+100 gram
+kolot peyniri</br>
+(rendelenmiş)25 gram
+tel peyniri</br>
+Nasıl Yapılır?</br>
+Bir kasede maya, ılık su ve zeytinyağını karıştırın ve 3 dakika bekletin.
+
+Unu bir yoğurma kabına alın ve mayalı karışımı unun üzerine dökün.
+
+Yoğurduğunuz hamurun üzerine streç film örtüp, 30 dakika mayalanmaya bırakın.
+
+Mayalanan hamuru elinizle açabildiğiniz incelikte açın.
+
+Kenarlarını bir parmak olacak şekilde içe doğru katlayın.
+
+240 derece fırında 5 dakika bu şekilde fırınlayın.
+
+5 dakika fırında pişen pideyi fırından çıkarıp üzerine rendelenmiş kolot peyniri ve tel peynirini ekleyip 5 dakika daha fırına verin.
+
+Pideyi tekrar fırından çıkarın ve üzerine yumurta ve 1 yemek kaşığı tereyağı ekleyin ve fırını kapatıp sadece mevcut ısısı ile yumurtayı pişirmesini bekleyin. Sarısını çok fazla katılaştırmadan fırından alın ve servis edin.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+     <div id="kutu22" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KARADENİZ USULÜ KAVURMA</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            
+Karadeniz Usulü Rize Kavurma Malzemeler:</br>
+
+> 1 buçuk kilo kuşbaşı doğranmış dana eti (dana kolundan seçilmiş olmalı)</br>
+
+> 200 gram iç yağı</br>
+
+> 1 çay bardağı ay çiçeği yağı</br>
+
+> Aldığı kadar su > 1 çorba kaşığı tuz</br>
+
+> 20 adet arpacık soğan</br>
+
+> 2 yemek kaşığı tereyağı</br>
+
+Karadeniz Usulü Rize Kavurma  Hazırlanışı:</br>
+
+Kuşbaşı doğranmış olan eti, iç yağı ve ay çiçeği yağını bir tencereye koyup kapağını kapatın ve yaklaşık 1 buçuk saat kısık ateşte pişmesini bekleyin. Etinizin sulandığını göreceksiniz, suyunu çekmesini bekleyip ardından eti aynı tencerede yavaş yavaş kavurmaya başlayın. Et zaten lokum gibi olmuş olacak. Kavrulmuş ete, üzerini geçmeyecek kadar su ve tuzun ekleyin. Tencerenin kapağını kapatarak kavurmanın demlenmesini bekleyin. Ayrı bir tavaya aldığınız tereyağı kızdırın ve içine arpacık soğanları katın. Kavurduğunuz soğanların rengi atınca altını kapatın ve kavurmanıza ekleyin. Biraz dinlendikten sonra Rize kavurmanız hazırdır, afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu23" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HİNKAL</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Hinkal ( Etli Mantı ) Tarifi İçin Malzemeler</br>
+Hamuru için :</br>
+
+1 kg un</br>
+2 tatlı kaşığı tuz</br>
+Ilık su ( kulak memesi kıvamına gelene Kadar su ekleyin )</br>
+İç harcı için :</br>
+
+Yarım kg kıyma</br>
+2 adet kuru soğan</br>
+Tuz</br>
+Karabiber</br>
+Hinkal ( Etli Mantı ) Tarifi Yapılışı</br>
+İlk olarak unu bir kaba alıyoruz tuzunu ekliyoruz. Ilık suyu azar azar ekleyip yoğuruyoruz. Kulak memesi kıvamına gelene kadar yoğuruyoruz. ( hamuru ne kadar iyi yoğurursak o kadar iyi ) Yoğurduğumuz hamurun üzerini kapatıp 10 dakika bekletiyoruz. Daha sonra hamuru masanın üzerine alıyoruz biraz daha yoğuruyoruz. Ve eşit parçalara ayırıyoruz. ( Parçalar küçük olmasın büyük olması gerekiyor) daha sonra açacağımız hamuru alıyoruz. Diğer hamurları bir kaba alıp üzerini kapatıyoruz kurumaması için. Sofraya koyduğumuz hamuru oklava ile açıyoruz. Açtığımız hamurun kalın olmamasına dikkat edin. Açtığımız hamuru yuvarlak bir kapak ile kesiyoruz. Kapağın boyutu büyük de olmasın küçük de. Kesme işlemi bitince hamurdan parçalar kalıyor. Onları da kaba alıyoruz. Hazırladığımız kıyma harcını kestiğimiz yuvarlakların içine koyuyoruz. Ve büzüyoruz. Daha sonra bir tencere de su kaynatıyoruz. Suyuna tuz atıyoruz. Su kaynayınca hinkalları içine döküyoruz. Kısık ateşte değil yüksek ateşte pişiriyoruz. ( eritmeden pişirmeye dikkat edin). Daha sonra servis tabağına alalım. Tereyağ eritip üzerine dökelim. İsteğe göre salçalı sos yapabilirsiniz. 
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu24" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KIYMALI SİRON</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Kıymalı Siron Yapımı Tarifi İçin Malzemeler</br>
+3 adet yufka</br>
+500 gram orta yağlı kıyma</br>
+2 adet kuru soğan</br>
+Tuz</br>
+Karabiber</br>
+1 yemek kaşığı tepeleme domates salçası</br>
+1 yemek kaşığı tereyağı</br>
+1 yemek kaşığı sıvı yağ</br>
+750 ml su</br>
+2 su bardağı yoğurt</br>
+2 diş sarımsak</br>
+Sos için:</br>
+
+1 yemek kaşığı zeytinyağı</br>
+1 tatlı kaşığı kırmızı pul biber</br>
+Kıymalı Siron Yapımı Tarifi Yapılışı</br>
+Tencereye 3 yemek kaşığı sıvı yağ koyup soğanı küçük doğrayıp kıyma ile beraber suyunu çekene kadar kavuruyoruz.
+Tuzunu ve karabiberini ekleyip karıştırıyoruz. Yufkayı ortadan ikiye kesiyoruz.
+Geniş kenar kısmına 2 parmak genişliğinde kıyma yerleştiriyoruz.
+Kenarlarını hafif kıvırıp rulo şeklinde sarıyoruz.
+2 parmak genişliğinde keserek dikine yağlanmış borcama diziyoruz.
+180 derece önceden ısıtılmış fırında hafif kızarana kadar pişiriyoruz. ,
+Tencereye tereyağını koyup eritiyoruz, zeytin yağını ve salçayı ekleyip 2 dakika kavuruyoruz.
+Suyunu ekleyip 5 dakika çorba gibi pişiriyoruz.
+Fırından kıymalı yufkayı çıkartıp bu suyu üzerine gezdirip tekrar fırına sürüp pişirmeye bırakıyoruz.
+Piştikten sonra üzerine sarımsaklı yoğurdu döküp biberli sosumuzu gezdiriyoruz.
+NOT: Üç yufka 25 cm kare borcama tam yetiyor. Pişirme sürem 30 dakika ön pişirme, 30 dakika sosunu döktükten sonra olarak 1 saat sürdü. Yufkanın üzerine döktüğümüz salçalı sos üzerini örtmeyecek biraz aşağıda kalacak şekilde olsun.
+
+AFİYET OLSUN:)
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+       <div id="kutu25" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HAMSİ PİLAVI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Hamsi Pilav Tarifi İçin Malzemeler</br>
+1,5 kilo hamsi</br>
+3 adet soğan (rendelenmiş)</br>
+2 yemek kaşığı dolmalık fıstık</br>
+2 yemek kaşığı kuş üzümü</br>
+1,5 su bardağı pirinç</br>
+1 tatlı kaşığı yenibahar</br>
+1 tatlı kaşığı karabiber</br>
+Tuz</br>
+Maydanoz</br>
+2 su bardağı sıcak su ( pilav için )</br>
+Tereyağı</br>
+Sıvı yağ</br>
+Hamsi Pilav Tarifi Yapılışı</br>
+Hamsiler güzelce ayıklanır ve kılçıkları temizlenip yıkanır.
+Hamsiler suda bekletilir ve tuz, limon suyu eklenir. Bu sayede hamsi kokusu pilava sinmez. En az 20 dakika.
+Kuş üzümleri bir kaseye alınıp ılık suda bekletilir.
+Pirinçler yıkanıp sıcak suda tuz eklenip bekletilir.
+Tencereye tereyağı ve sıvı yağ koyulur. Soğanlar eklenip kavrulur.
+Fıstıklar eklenip kavurmaya devam edilir.
+Kuş üzümlerinin suyu süzülür ve tencereye eklenir.
+Karabiber, yenibahar, tuz eklenir.
+Pirinçler eklenip suyu da eklenip kısık ateşte pişirilir.
+Pişince maydanoz eklenip karıştırılır.
+Borcam tereyağıyla iyice yağlanır ve hamsiler dizilir.
+İç harcı eklenip gene hamsi dizilir.
+Üzerine çok az sıvı yağ dökülür.
+180 derece fırında 25 dakika kızarana kadar pişirilir. Bende bir Rizeli olarak yöresel yemeğimizi paylaşmak istedim. Afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu26" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HAMSİ BUĞULAMASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Hamsi buğulama tarifi için malzemeler:</br>
+1 kg hamsi</br> 2 soğan</br> 2 domates </br>2 limon</br> 4-5 dal maydanoz</br> 1 çorba kaşığı sıvıyağ </br>Tuz</br>
+karabiber</br> 2 çay bardağı su</br>
+Hamsi buğulama Nasıl Yapılır</br>
+Hamsileri temizleyip kılçıklarını ayıklayın. Bol suda bir kaç kez yıkayıp süzgece alın. 
+Domates, soğan ve limonları ince halkalar halinde dilimleyin. Maydanozu yaprak yaprak ayırın. 
+Hamsileri derin bir kaba alın. Sıvıyağ, tuz ve karabiber ekleyip iyice karıştırın. Hamsileri düz tabanlı bir tencereye düzgün şekilde dizin. Üzerine domates, limon ve soğan halkalarını değişimli olarak yerleştirin. 
+Üzerine maydanoz yapraklarını serpiştirip 2 çay bardağı suyu ilave edin. Kapağı kapalı olarak orta ateşte 15 dakika pişirin. 5-6 dakika dinlendirip sıcak olarak servis yapın.
+
+Afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu27" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HAMSİ KÖFTESİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Malzemeler:</br>500 gram
+hamsi</br>
+1 adet
+kuru soğan</br>
+1 adet
+yumurta</br>
+1 avuç
+ince doğranmış maydanoz</br>
+3 su bardağı
+mısır unu</br>
+1 çay kaşığı
+tuz</br>
+1 çay kaşığı
+karabiber</br>
+Kızartmak için:3/4 su bardağı
+ayçiçek yağı</br>
+Nasıl Yapılır?</br>
+Hamsileri temizleyin, kılçıklarını ayıklayın ve bol suyla yıkayın.
+
+Kılçığı ayıklanmış hamsileri ince ince doğrayın ve derince bir kabın içerisine alın. Üstüne kuru soğanı rendeleyin ve diğer malzemeleri de ilave edip güzelce yoğurun.
+
+Hazırladığınız karışımdan parçalar kopartın ve elinizle şekillendirin.
+
+Bir kızartma tavasında iyice kızdırdığınız bolca ayçiçek yağında, köftelerin her iki tarafı da güzelce kızarana dek kızartın.
+
+Sıcak sıcak servis edin.</br>
+
+Servis Önerisi</br>
+Marul yaprakları ve limon dilimleri ile servis edebilirsiniz.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+  
+       <div id="kutu28" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>PALAMUT TAVA</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>
+            Malzemeler:</br>2 adet
+palamut</br>
+1 su bardağı
+mısır unu</br>
+1 yemek kaşığı
+un</br>
+1 tatlı kaşığı
+tuz</br>
+1 çay kaşığı
+karabiber</br>
+3 su bardağı
+kızartma yağı</br>
+Püf Noktası</br>
+Balıkların kızaran yüzeyinin tam anlamıyla kızardığına emin olmadan çevirmek, balığın dağılmasına sebebiyet verecektir.</br>
+
+Nasıl Yapılır?</br>
+Palamutları iyice temizleyin ve halka halka doğrayın.
+
+Süzgece koyun ve iyice suyu ve kanı süzülünceye kadar bekletin.
+
+Kızartma yağını, kızartma yapacağınız tava veya tencerenin içine dökün ve iyice kızmasını bekleyin.
+
+Buzdolabı poşetinin içine un, mısır unu ve baharatları ilave edin.
+
+Suyu süzülen balıkları buzdolabının içine atın ve ağzını kapatarak, unun ve baharatların balıkların bütün yüzeyini kapladığına emin olun.
+
+Kızgın yağda iki yüzü de iyice pişinceye kadar kızartmaya devam edin.
+
+Kızaran palamutları kağıt havlu yardımıyla fazla yağını süzmesi için bir tabağa alın ve bu tabaktan servis yapın. İşte bu kadar, afiyet olsun!
+</br>
+Servis Önerisi:</br>
+Bol rokalı veya patates püreli bir tabağın içinde servis etmek, sunumunuzu seviye atlatır. :)
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu29" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HAMSİ DİBLESİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Hamsi diblesi tarifi için malzemeler:</br>
+Yarım kg hamsi</br>Yarım demet kara lahana</br>1 su bardağı pirinç</br>Yarım demet maydanoz</br>2 çorba kaşığı tereyağı veya margarin1 kahve fincanı sıvıyağ</br>2 soğan</br>1 kahve fincanı su</br>Tuz</br>
+karabiber</br>
+nane</br>
+Hamsi diblesi Nasıl Yapılır</br>
+Hamsileri temizleyip kılçıklarını çıkarın. Yıkayıp süzgece alın. Lahanayı yıkayıp süzün ve çok ince şeritler halinde doğrayın. Pirinci yıkayıp süzgece alın. Soğanları soyup küp küp doğrayın.
+
+Lahananın bir kısmını tencerenin dibine döşeyin. Pirinç, soğan ve hamsileri ekleyin. Üzerine kalan lahanayı yayın. Su ve sıvıyağ ekleyip kapağı kapalı olarak yüksek ateşte 10-12 dakika pişirin. Tuz serpip karıştırın ve ocağı kısın. Tereyağını kızdırıp üzerine gezdirin ve kısık ateşte 10 dakika demlendirin.
+
+Maydanozu yıkayıp kıyın. Tuz, karabiber, nane ve maydanozu tencereye ekleyip karıştırın. Servis tabağına alıp sıcak olarak servis yapın.
+
+Afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu30" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>HAMSİ KUŞU </h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Malzemeler:</br>1 kilogram
+hamsi</br>
+1/2 demet
+taze soğan</br>
+1/2 demet
+maydanoz</br>
+1 adet
+orta boy kuru soğan</br>
+1 yemek kaşığı
+mısır unu</br>
+1/2 tatlı kaşığı
+nane</br>
+1 çay kaşığı
+tuz</br>
+1/2 çay kaşığı
+taze çekilmiş tane karabiber</br>
+Hamsileri kızartmak için:</br>3 adet
+yumurta</br>
+1/2 su bardağı
+mısır unu</br>
+3/4 su bardağı
+ayçiçek yağı</br>
+Püf Noktası</br>
+Hamsi kuşu yapımında iri ve etli hamsiler kullanmaya dikkat edin.</br>
+
+Pişirme Önerisi</br>
+Hazırladığınız karışıma ince ince kıydığınız kırmızı biber parçaları katabilirsiniz.İç harç eklemeden de fileto hamsileri birbirine yapıştırıp kızartarak hamsi kuşu hazırlayabilirsiniz.</br>
+
+Nasıl Yapılır?</br>
+Kafa ve kılçık kısımlarını ayıkladığınız hamsileri fileto haline getirin. Bol suda yıkayıp fazla sularını kağıt havlu yardımıyla alın.
+
+Taze soğanların yeşil kısımlarını ince ince doğrayın. Ayıklanmış maydanoz yapraklarını incecik kıyın. Kuru soğanı diğer malzemelerle uyumlu olacak şekilde kıyın.
+
+Doğranmış yeşillikler, kuru soğan, mısır unu, nane, tuz ve taze çekilmiş tane karabiberi derin bir kasede karıştırın.
+
+Fileto haline gelen hamsilerden iki tanesini düz bir tabağa alın. Birinin üzerine hazırladığınız karışımdan sürüp diğerini üzerine sıkıca kapatın. İki hamsi birbirine yapışsın. Böylelikle yassı şeklinde köfteler hazırlayın.
+
+Yumurtaları derin bir kasede çırpın. Mısır ununu düz bir tabağa yayın.
+
+Hazırladığınız hamsi kuşları öncelikle çırpılmış yumurtaya ardından mısır ununa bulayıp derin bir tavada kızdırdığınız ayçiçek yağında kızartın. Arzuya göre ızgarada ters yüz ederek yağ kullanmadan pişirin. Sıcağı sıcağına sevdiklerinizle paylaşın.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu31" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>FINDIKLI YUFKA TATLISI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Fındıklı yufka tatlısı tarifi için malzemeler</br>
+2 yufka</br>1 su bardağı kavrulmuş fındık içi</br>50 gr tereyağı veya margarin</br>1 su bardağı süt</br>Şerbet için: </br>1 su bardağı su</br>1 su bardağı tozşeker</br>Limon suyu</br>
+Fındıklı yufka tatlısı Nasıl Yapılır</br>
+Fındıkları robota alıp çekin veya havanda ezin. Yayvan bir tavayı yağlayın. Bir yufkayı parçalara bölüp sütle ıslatın ve tavaya yerleştirin. Üzerine çekilmiş fındığın yarısını serpin. Kalan yufkayı da parçalar halinde sütle ıslatıp üzerine yerleştirin. Kalan sütü üzerine gezdirin. 
+
+Tavayı kısık ateşe alıp yufkaların kenarlarına birkaç parça margarin ekleyin. Kapağı kapalı olarak 5-6 dakika pişirin. Spatula ile altını konrol edin ve tavayı sallayın. Altı kızarınca ters çevirip diğer tarafını kızırancaya kadar pişirin. Tavayı ocaktan alın. 
+
+Şerbet için; su ve şekeri kaynatın. Birkaç damla limon suyu ekleyip ılınmaya bırakın. Ilık şerbeti ılık yufkanın üzerine gezdirerek dökün. Şerbeti çekince üzerine kalan çekilmiş fınıdığı serpip servis tabağına alın. Dilimleyerek servis yapın.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+       <div id="kutu32" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>LAZ HELVASI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Laz Helvası Tarifi İçin Malzemeler:</br>
+1 litre süt</br>
+1 su bardağı toz şeker</br>
+2 adet yumurta sarısı</br>
+1 su bardağı un</br>
+Yarım su bardağı irmik</br>
+1 paket vanilya</br>
+Laz Helvası Tarifi Yapılışı</br>
+Öncelikle kuru malzemeleri tencereye alın ve karıştırın. Yumurta sarılarını ve sütü de ekleyip ocağa almadan çırpın.
+Ocağa alıp karıştırarak muhallebiden daha kalın kıvam da pişirin.
+Genişçe bir borcama döküp soğuduktan sonra buzdolabına kaldırın.
+2-3 saat donmasını bekledikten sonra dilimleyerek üzerilerine fındıkla servis edebilirsiniz.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+      <div id="kutu33" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KUKUCA</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Kukuca Nasıl Yapılır ( Trabzon Yemekleri )</br>
+
+Malzemeler:</br>
+2 bağ pazı</br>
+1 baş soğan</br>
+500 gr mısır unu</br>
+1 bardak zeytinyapı</br>
+Tuz</br>
+
+Yapılışı:</br>
+Önce mısır unu ile ekmeklik hamur yoğrulur.
+Pazı haşlanır ve suyunun çıkması için elle sıkılır.
+Bir tencerede soğan yağla kavrulur, pazı içerisine atılarak aynı muameleye tabi tutulur.
+Sonra tavaya bir kat hamur serilir.
+Üzerine kavrulmuş pazı koyulur.
+Pazının üzerine tekrar hamur konularak kaygana gibi pişirlir.
+Daha sonra tabaklara konularak servis yapılır.
+Yenirken yanında yoğurt tercih edilir.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+      <div id="kutu34" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>KABAK SÜTLACI</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Kabak Sütlacı Tarifi İçin Malzemeler:</br>
+1 kap dolusu kabak (kestane yada kara kabak)</br>
+14 su bardağı süt</br>
+1 tatlı kaşığı tuz</br>
+2, 5 su bardağı toz şeker</br>
+  Kabak Sütlacı Tarifi Yapılışı:</br>
+Kabaklar küp küp doğranır. Daha sonra robottan geçirilir ve tencereye alınır. 6 su bardağı süt üzerine eklenir ve haşlanmaya bırakılır. Haşlarken dikkat edin süt taşabilir arada bir karıştırın. Kabaklar yumuşayınca blander dan geçirin, püre gibi görüntü elde edeceksiniz. İçine tuzu ilave edip karıştırın. Arkasindan 8 bardak sütü karıştırarak ekleyin ve şekeri de ilave edin. Bır taşımlık kaynayınca altını kapatın ve sıcak sıcak servis yapın afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+      <div id="kutu35" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>LAZ BÖREĞİ</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Hamuru İçin:</br>1 çay bardağı
+yoğurt
+(suyu ile birlikte)</br>1 çay bardağı
+sıvı yağ</br>
+1 çay bardağı
+su</br>
+1 çay kaşığı
+tuz</br>
+1/2 paket
+kabartma tozu</br>
+2 adet
+yumurta</br>
+4 su bardağı
+un</br>
+Muhallebisi için:</br>5 su bardağı
+süt</br>
+2 adet
+yumurta sarısı</br>
+4 yemek kaşığı
+un</br>
+1 yemek kaşığı
+nişasta (mısır veya buğday nişastası)</br>
+1 su bardağı
+toz şeker</br>
+1/2 adet
+limon kabuğu rendesi</br>
+Şerbeti için:</br>1,5 su bardağı
+toz şeker</br>
+1,5 su bardağı
+su</br>ı kaşığı
+limon suyu</br>
+Tezgahı Unlamak İçin:</br>1 su bardağı
+nişasta (mısır veya buğday nişastası)</br>
+Yağlamak İçin:</br>1 çay bardağı
+eritilmiş tereyağı</br>
+1 çay bardağı
+sıvı yağ</br>
+Nasıl Yapılır?</br>
+Şerbeti için su ve şekeri, şeker eriyene kadar karıştırın ve kaynamaya bırakın. Kaynadıktan sonra limon suyunu ekleyin ve kısık ateşte şerbet kıvamını alana kadar pişirin ve ocağın altını kapatıp oda sıcaklığında soğumaya bırakın.
+
+Baklava hamurunu hazırlamak için geniş bir kasede sulu yoğurt, sıvı yağ, su, tuz, kabartma tozu ve yumurtayı güzelce karıştırın.
+
+Bu karışımın üzerine yavaş yavaş ekleyerek,  hamur ele yapışmayan bir kıvama gelene kadar yoğurun.
+
+Hamurun tezgaha yapışmaması için nişasta serpiştirin ve yoğurduğunuz hamuru 18 eşit bezeye bölün.
+
+Muhallebisi için; ayrı bir kasede 1 su bardağı süt, yumurta sarıları, vanilin, nişasta, un ve limon kabuğu rendesini karıştırın.
+
+Geriye kalan 4 su bardağı sütü tencereye aktarın. Üzerine 1 su bardağı toz şekeri de ekledikten sonra ocağın altı açıkken, şeker eriyene kadar karıştırın.
+
+Tencerede ısınan sütlü karışımdan bir kepçe süt alın ve kasede hazırladığımız yumurtalı karışımın içerisine azar azar ekleyerek ısılarını eşitleyin.
+
+Isıları eşitlenen karışımları birleştirelim. Kasedeki karışımı azar azar tencereye ekleyin ve sürekli olarak karıştırarak muhallebi kıvamına gelene kadar pişirin. Piştikten sonra ocaktan alıp, ılımaya bırakın.
+
+Tezgaha tekrar nişasta serpiştirin. Tüm bezeleri incecik olacak şekilde açın.
+
+Yağladığınız, fırına dayanıklı fırın kabının içerisine yufkayı yerleştirin. İlk yufkanın dışarıya doğru taşmasına izin verin.
+
+Eritilmiş tereyağı ve sıvı yağ karışımı ile ilk yufka katını fırça yardımıyla yağlayın.
+
+17 katın her katını yağlayarak fırın kabınıza dizin.
+
+Hazırladığınız muhallebi karışımını yufkaların üzerine dökün.
+
+İlk katın taşan yufkalarını içe doğru katlayın.
+
+Üzerine son yufka katını da ekledikten sonra son kez yağlayın ve dilimleyin.
+
+170 derece ısıtılmış fırında kızarana kadar 30 dakika pişirin.
+
+Fırından çıkardığınız laz böreğinin ilk sıcaklığı geçtikten sonra soğumuş olan şerbeti üzerine gezdirin ve sevdiklerinizle afiyetle tüketin.
+</p>
+      </div>
+  </div>
+
+  </div>
+  
+      <div id="kutu36" class="kutu">
+      <div class="icKutu">
+          <div class="kapatButonuCerceve">
+                <div class="kapatButonu">X</div>
+          </div>
+           <h1>PEPERUÇA</h1><div class="clear"></div> <!-- floatın etkisini kaldırmak için clear:both kullanıyoruz-->
+            <p>Malzemeler:</br>1 kg.
+siyah kokulu üzüm</br>
+3 su bardağı
+su</br>
+1 su bardağı
+şeker</br>
+4 yemek kaşığı
+nişasta</br>
+1/2 çay bardağı
+mısır unu</br>
+Püf Noktası</br>
+Dilerseniz tatlınızı tamamen mısır unu kullanarak da hazırlayabilirsiniz. Ancak daha yoğun bir kıvama ve daha alışıldık bir tada sahip olması için biz hem nişasta, hem mısır unu kullanmanızı öneriyoruz. Kıvamı dilediğiniz gibi olmazsa bir miktar nişastayı su ile açarak tatlınıza ilave edebilirsiniz. Kokulu üzüm bulamazsanız, klasik mor üzümlerden de pepeçuranızı hazırlayabilirsiniz.</br>
+
+Nasıl Yapılır?</br>
+Üzümlerinizi iyice yıkayın. Saplarından ayıklayarak tencerenin içerisine alın.
+
+Üzerine su ve şeker ilave ederek kısık ateşte pişmeye bırakın.
+
+Üzümler iyice suyunu bırakıp, eriyene kadar pişirin.
+
+Ardından büyükçe bir süzgeçten geçirin. Ezilmemiş olan üzümleri tahta kaşık yardımıyla iyice ezin.
+
+Elde ettiğiniz üzümlü şekerli karışımın yaklaşık 2 su bardağı kadarını tencerenin içerisine alın.
+
+Bir çırpma teli yardımıyla içerisine nişastayı, ardından mısır unu karıştıra karıştıra yedirin.
+
+Geriye kalan suyu kepçe yardımıyla azar azar ilave edin. Karıştırmaya devam edin.
+
+Dilediğiniz kıvama geldiğinde kaselere doldurun. Servis kaselerinin içinde bir süre ılımasını bekleyin.
+
+Ilıdıktan sonra buzdolabına kaldırın ve iyice soğumalarını sağlayın. Soğuyup, kıvamı iyice oturan tatlılarınızı süsleyerek servis edebilirsiniz. Afiyet olsun.
+</p>
+      </div>
+  </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,307 @@
+body {
+	background-color: #ffffbc;
+}
+#container {
+	background-color: #FFF;
+	padding: 10px;
+	height: auto;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #CCC;
+	border-radius:10px;
+	-moz-border-radius:10px;*/
+}
+#abonedivi {
+	background-color: #FFFFFF;
+	height:30px;
+	width: 980px;
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-right:0px;
+}
+#sol{
+	float:left;
+	width:400px;
+	margin-bottom:0px;
+	margin-top:0px;
+	height:30px;
+	margin:0px;
+	}
+#aboneolyazisi{
+float:left;
+padding:0px;
+margin:0px;
+font-size:15px;
+}
+
+#sag{
+	float:right;
+	width:300px;
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-right:0px;
+	height:30px;
+	margin:0px;
+	}
+#sosyalmedya{
+	float:left;
+	height:20px;
+	padding:0px;
+	margin:0px;
+	}
+#aramadivi{
+float:right;
+height:15px;
+padding-right:0px;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:0px;
+}
+#aranacakmetin{
+height:15px;
+float:left;
+padding-right:0px;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:0px;
+		}
+#buton{
+	padding-right:0px;
+	padding-top:2px;
+	padding-bottom:2px;
+	padding-left:0px;
+	float:right;
+	height:22px;
+	width:40px;
+	font-size:10px;
+	text-align:center;
+	}
+#menu {
+	height: 50px;
+	width: 980px;
+	float: left;
+	margin-top:0px;
+	background-color:#6C6;
+}
+
+ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+li{
+float:left;
+}
+li a:hover{
+color:#FFFFFF;
+background-color:#006600;
+}
+li a {
+display: block;
+background-color:#6C6;
+color:#000000;
+height:50px;
+width: 150px;
+text-align: center;
+line-height:50px;
+text-decoration:none;
+}
+.onecikanyazisi:hover
+{
+	color:#FFFFFF;
+	background-color:#FFFF66;
+}
+#container #header #menu ul {
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+#container #header #menu ul li a {
+	display: block;
+	float: left;
+	height: 40px;
+	width: 110px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+#container #header #menu ul li a:hover {
+	display: block;
+	float: left;
+	height: 40px;
+	width: 110px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+#clear-header {
+	clear: both;
+}
+#banner {
+	height: 303px;
+	width: 980px;
+	margin-top: 10px;
+	background-image: url(../karadeniz/malzemeler/bgSlide.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 12px;
+}
+#divider {
+	height: 26px;
+	width: 980px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#container #content #content-left h1 {
+	font-size: 14px;
+	margin: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+	text-align: center;
+}
+#clear-content {
+	clear: both;
+}
+#footer {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	height: 30px;
+	width: 980px;
+	line-height: 30px;
+	margin-top:10px;
+	margin-bottom:10px;
+	text-align: center;
+	background-color:#66CC33;
+}
+#container #footer a {
+	color: #333;
+	text-decoration: none;
+}
+#container #footer a:hover {
+	color: #F00;
+	text-decoration: none;
+}
+#content {
+	height:auto;
+	width: 980px;
+}
+#content-left {
+	background-color: #F0EAD2;
+	height:450px;
+	width: 300px;
+	border: 1px solid #CCC;
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	text-align: justify;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:5px;
+}
+#content-center {
+	background-color: #F0EAD2;
+	height:450px;
+	width: 300px;
+	border: 1px solid #CCC;
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	text-align: justify;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:5px;
+
+}
+#content-right {
+	background-color: #F0EAD2;
+	height:450px;
+	width: 300px;
+	border: 1px solid #CCC;
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	text-align: justify;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin:5px;
+	
+}
+#icerik2divi{
+	width:980px;
+	height:300px;
+	background-color:#FFFFFF;
+	padding: 5px;
+	}
+	
+#bugunnepisirsem{
+	width:300px;
+	height:300px;
+	background-image:url(g%C3%B6rseller/concrete-834490_960_720.jpg);
+	float:left;
+	color: #FFF;
+	padding: 5px;
+	}
+	
+	#onecikanlar{
+	width:650px;
+	height:300px;
+	float:righ;
+	padding:0px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container #content #content-center h1 {
+	text-align: center;
+}
+#container #content #content-right h1 {
+	text-align: center;
+}
+#container #icerik2divi #bugunnepisirsem table tr td {
+	font-weight: bold;
+	font-size: 18px;
+}
+#container #icerik2divi #bugunnepisirsem table tr td {
+	text-align: center;
+}
+a:link{
+color: #000;
+text-decoration:none;
+
+}

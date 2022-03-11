@@ -1,0 +1,236 @@
+body {
+	background-color: #ffffbc;
+}
+#container {
+	background-color: #FFF;
+	padding: 10px;
+	height: auto;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid #CCC;
+	border-radius:10px;
+	-moz-border-radius:10px;
+}
+#aboneyazi{
+height:15px;
+width:150px;
+float:left;
+}
+#aranacakmetin{
+height:15px;
+float:left;
+padding-top:0px;
+padding-bottom:0px;
+		}
+#aramakutusu{
+float:right;
+height:15px;
+}
+#abonedivi {
+	background-color: #FFFFFF;
+	height:15px;
+	width: 980px;
+	padding-bottom:0px;
+	padding-top:0px;
+	padding-right:0px;
+}
+#btn{
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	float:right;
+	height:15px;
+	margin-top:0px;
+	}
+	
+
+
+#header {
+	background-color: #5ee461;
+	height: 141px;
+	width: 980px;
+}
+
+#logo {
+	height: 150px;
+	width: 180px;
+	float: left;
+}
+
+
+
+
+#menu {
+	background-image: url(../karadeniz/malzemeler/bgMenu.png);
+	background-repeat: no-repeat;
+	height: 40px;
+	width: 790px;
+	float: left;
+	margin-top: 20px;
+}
+
+#container #header #menu ul {
+	padding: 0px;
+	list-style-type: none;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+}
+#container #header #menu ul li a {
+	display: block;
+	float: left;
+	height: 40px;
+	width: 110px;
+	text-decoration: none;
+	color: #077936;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+#container #header #menu ul li a:hover {
+	display: block;
+	float: left;
+	height: 40px;
+	width: 110px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+	line-height: 40px;
+}
+#clear-header {
+	clear: both;
+}
+#banner {
+	height: 303px;
+	width: 980px;
+	margin-top: 10px;
+	background-image: url(../karadeniz/malzemeler/bgSlide.png);
+	background-repeat: no-repeat;
+	background-position: bottom;
+	padding-bottom: 12px;
+}
+#divider {
+	height: 26px;
+	width: 980px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+#content {
+	height: 200px;
+	width: 980px;
+}
+#content-left {
+	background-color: #F0EAD2;
+	height: 188px;
+	width: 288px;
+	border: 1px solid #CCC;
+	float: left;
+	padding: 5px;
+	font-size: 14px;
+	text-align: justify;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+#container #content #content-left h1 {
+	font-size: 14px;
+	margin: 0px;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #666;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+#clear-content {
+	clear: both;
+}
+#footer {
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+	height: 30px;
+	width: 980px;
+	line-height: 30px;
+	margin-top: 10px;
+}
+#container #footer a {
+	color: #333;
+	text-decoration: none;
+}
+#container #footer a:hover {
+	color: #F00;
+	text-decoration: none;
+}
+
+#content-center {
+	height: 200px;
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#content-right {
+	height: 200px;
+	width: 340px;
+	float: left;
+}
+.flexslider {
+	margin:20px auto !important;
+	padding: 0;
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+	width:980px;
+}
+.flexslider .slides > li {display: none; -webkit-backface-visibility: hidden;}
+.flexslider ol,ul,li{margin:0; padding:0; list-style: none;}
+.flexslider .slides img {width: 980px; height:303px; display: block;}
+.flex-pauseplay span {text-transform: capitalize;}
+ 
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;}
+html[xmlns] .slides {display: block;}
+* html .slides {height: 1%;}
+ 
+.slides div{background-color:black; opacity:0.7; bottom:0px; padding:10px; position:absolute ;font:13px Tahoma; text-align:center; border-radius:0 5px 0 0;}
+.slides div a{color:white; text-decoration:none;}
+ 
+.no-js .slides > li:first-child {display: block;}
+ 
+.flexslider {background: #fff; border: 4px solid #fff; position: relative; -webkit-border-radius: 4px; -moz-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; box-shadow: 0 1px 4px rgba(0,0,0,.2); -webkit-box-shadow: 0 1px 4px rgba(0,0,0,.2); -moz-box-shadow: 0 1px 4px rgba(0,0,0,.2); -o-box-shadow: 0 1px 4px rgba(0,0,0,.2); zoom: 1;}
+.flex-viewport {max-height:303px; -webkit-transition: all 1s ease; -moz-transition: all 1s ease; transition: all 1s ease;}
+.loading .flex-viewport {max-height:303px;}
+.flexslider .slides {zoom: 1;}
+ 
+.flex-direction-nav {*height: 0;}
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; z-index: 10; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .flex-disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+ 
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3); }
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+ 
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; ; margin: 0;}
+.flex-control-thumbs img {width: 100%;display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
+ 
+@media screen and (max-width: 860px) {
+ .flex-direction-nav .flex-prev {opacity: 1; left: 0;}
+ .flex-direction-nav .flex-next {opacity: 1; right: 0;}
+}
+ 
+.loading .flexslider {opacity: 0 !important;}
+.loading:before{content: 'Listeleniyor'; display: block; margin: 100px 0 0; text-align: center; color: black; font-weight: bold; font-size: 30px; opacity: 0.3;}
+3.Nerede gösterilsin?

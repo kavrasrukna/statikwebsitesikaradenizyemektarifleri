@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="style.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+<p id='tikla'>bu yaziya tikla</p>
+<div class="goster" style="display:none;">Sonradan Açılan kısım</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"> 
+</script>
+<script>
+$(function(){
+$('#tikla').click(function(e){
+$('.goster').show();
+
+});
+$('#tikla').dblclick(function(e){
+$('.goster').hide();
+
+});
+
+}
+
+)
+</script>
+</html>
